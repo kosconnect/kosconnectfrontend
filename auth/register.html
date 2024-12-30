@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo logic.png" type="image/x-icon">
+    <title>Register | Kostconnect</title>
+    <link rel="stylesheet" href="/css/auth.css">
+    <!-- <script type="module" src="index.js"></script> -->
+
+    <!-- Google fonts signika -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- FA Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tambahkan link SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBPLBY1T1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPBPLBY1T1');
+    </script>
+
+
+</head>
+
+<body>
+    <div class="form-container1">
+        <form class="register-form" action="#" method="POST">
+            <!-- Header with logo and "Daftar" -->
+            <div class="brand">
+                <img src="img/logo logic.png" alt="Logo" height="50" class="logo-img">
+                <span class="text-center">Kostconnect</span>
+            </div>
+            <h2 class="text-center login-title">Daftar</h2>
+
+            <p class="welcome-text">Buat akun barumu!</p>
+
+            <div class="input-group">
+              <label for="register-name">Nama Lengkap</label>
+              <input type="text" id="register-name" name="Name" required>
+            </div>
+            
+            <div class="input-group">
+              <label for="register-email">Email</label>
+              <input type="email" id="register-email" name="Email" required>
+            </div>
+            
+            <div class="input-group">
+              <label for="register-role">Pilih Role</label>
+              <select id="register-role" name="Role" required>
+                <option value="" disabled selected></option>
+                <option value="pemilik-kos">Pemilik Kos</option>
+                <option value="pencari-kos">Pencari Kos</option>
+              </select>
+            </div>
+            
+            <div class="input-group">
+              <label for="register-password">Password</label>
+              <input type="password" id="register-password" name="Password" required>
+            </div>
+            
+
+            <!-- <div class="input-group">
+                <input type="text" id="register-name" name="Name" placeholder="Nama Lengkap" required>
+              </div>
+              
+              <div class="input-group">
+                <input type="email" id="register-email" name="Email" placeholder="Email" required>
+              </div>
+
+              <div class="input-group">
+                <select id="register-role" name="Role" required>
+                  <option value="" disabled selected>Pilih Role</option>
+                  <option value="pemilik-kos">Pemilik Kos</option>
+                  <option value="pencari-kos">Pencari Kos</option>
+                </select>
+              </div>
+              
+              <div class="input-group">
+                <input type="password" id="register-password" name="Password" placeholder="Password" required>
+              </div>               -->
+
+            <!-- Buttondaftar -->
+            <button type="submit" class="submit-btn" id="register-button">Daftar</button>
+
+
+            <div class="cancel-btn-container">
+                <a href="" class="cancel-btn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </a> <!-- Circle X Mark Icon -->
+            </div>
+
+            <!-- register Link -->
+            <div class="text-center mt-3">
+                <p class="register-text">Sudah punya akun? <a href="/auth/login.html"
+                        class="register-link">Masuk sekarang</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

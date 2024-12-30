@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #25a48a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #805700;
+  margin: 0;
+  padding: 20px;
+}
+
+  
+  h1,
+  h2,
+  h3,
+  .judul {
+      /* Untuk judul */
+      font-family: "Poppins", Arial, sans-serif;
+  }
+  
+  .form-container1 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Tetap menjaga ukuran ini */
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Use flexbox for better layout */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #1b3446;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .brand .logo-img {
+    margin-right: 10px;
+  }
+  
+  .brand .text-center {
+    color: #805700;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 50px;
+    font-family: 'Signika', sans-serif;
+  }
+  
+  .welcome-text {
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #1b3446;
+  }
+  
+  .form-control {
+    width: 100%; /* Adjust this value as needed */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: -10px; /* Mengatur posisi label di atas border */
+    left: 10px; /* Mengatur jarak kiri agar serasi dengan input lainnya */
+    transform: translateX(0); /* Menyelaraskan label secara horizontal */
+    background-color: white; /* Memberi background agar tidak tertutup input border */
+    padding: 0 5px; /* Menambah sedikit padding */
+    font-size: 14px; /* Menyesuaikan ukuran teks */
+    color: #333; /* Warna teks */
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1b3446;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus, select:focus {
+    border-color: #25a48a;
+  }
+  
+  input::placeholder, select {
+    color: #1b3446;
+  }
+  
+  .submit-btn {
+    width: 100%; /* Keep submit button at 100% width */
+    padding: 10px;
+    background-color: #1b3446;
+    color: #E9E3D5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2d4f6c;
+    color: white ;
+  }
+  
+  .cancel-btn-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .cancel-btn {
+    font-size: 24px;
+    color: #1b3446 ;
+    text-decoration: none;
+  }
+  
+  .cancel-btn:hover {
+    color: #2d4f6c ;
+  }
+  
+  .register-text {
+    margin-top: 10px;
+    font-weight: normal;
+    color: #1b3446;
+  }
+  
+  .register-link {
+    font-weight: bold;
+    color: #2d4f6c ;
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    color: #1b3446 ;
+  }
+  
+  /* Separator styling */
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: 'Signika', sans-serif;
+  }
+  
+  .separator .line {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Warna garis */
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .separator .text {
+    color: #888; /* Warna teks "atau" */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* WhatsAuth Button */
+  /* .whatsauth-btn-container {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .whatsauth-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .whatsauth-btn:hover {
+    background-color: #388e3c;
+  }
+   */
+  
+  /* Responsiveness */
+  
+  @media (max-width: 600px) {
+    .input-group {
+      margin-bottom: 15px;
+    }
+    input, select {
+      padding: 8px;
+      font-size: 14px;
+    }
+    label {
+      font-size: 14px;
+    }
+    .input-group-sejajar {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .separator {
+      flex-direction: column;
+      margin: 15px 0;
+  }
+  
+  .separator .line {
+      width: 100%; /* Garis penuh di mobile */
+      margin: 5px 0;
+  }
+  
+  .separator .text {
+      font-size: 12px;
+  }
+  
+  .whatsauth-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+      width: 100%; /* Tombol penuh untuk perangkat kecil */
+  }
+  }
+  
+  @media (max-width: 480px) {
+  .separator .text {
+      font-size: 11px;
+  }
+  
+  .whatsauth-btn {
+      font-size: 13px;
+      padding: 7px 10px;
+  }
+  }
