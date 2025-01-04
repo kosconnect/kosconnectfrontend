@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+        <!-- FA Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="register.css" />
   </head>
   <body>
@@ -25,6 +29,11 @@
       <div class="right">
         <h1>Daftar</h1>
         <form action="/register" method="POST">
+          <div class="cancel-btn-container">
+            <a href="https://kosconnect.github.io/" class="cancel-btn">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a> <!-- Circle X Mark Icon -->
+        </div>
           <div class="form-group">
             <label for="full-name">Nama Lengkap</label>
             <input
@@ -45,7 +54,7 @@
               required
             />
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="whatsapp">Nomor WhatsApp</label>
             <input
               type="text"
@@ -54,6 +63,19 @@
               placeholder="Masukkan nomor WhatsApp"
               required
             />
+          </div> -->
+          <div class="form-group whatsapp-group">
+            <label for="whatsapp">Nomor WhatsApp</label>
+            <div class="whatsapp-input">
+              <span class="prefix">+62</span>
+              <input
+                type="text"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="Masukkan nomor WhatsApp"
+                required
+              />
+            </div>
           </div>
           <div class="form-group">
             <label for="role">Daftar Sebagai</label>
@@ -74,8 +96,9 @@
             />
           </div>
           <button type="submit" class="btn">Daftar</button>
+
         </form>
-        <div class="footer">Sudah punya akun? <a href="/login">Masuk</a></div>
+        <div class="footer">Sudah punya akun? <a href="/auth/login.html">Masuk</a></div>
       </div>
     </div>
   </body>
