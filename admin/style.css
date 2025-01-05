@@ -1,5 +1,12 @@
+/* body {
+    font-family: 'Merriweather', 'Merriweather Sans';
+    margin: 0;
+    background: linear-gradient(to bottom right, #e3f2fd, #eceff1);
+    color: #333;
+} */
+
 body {
-    font-family: 'Signika', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     margin: 0;
     background: linear-gradient(to bottom right, #e3f2fd, #eceff1);
     color: #333;
@@ -34,6 +41,7 @@ body {
 }
 
 .sidebar-header h2 {
+    font-family: 'Merriweather', serif;
     font-weight: 600;
     font-size: 18px;
     margin: 0;
@@ -119,6 +127,23 @@ body {
     margin: 20px;
 }
 
+/* Section Headers (like dashboard title) */
+h1, .widget h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+/* Widget Information Text */
+.widget-info {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Dropdown and user roles */
+.user-info .name, .user-info .role {
+    font-family: 'Merriweather Sans', sans-serif;
+}
 
 /* Styling untuk tiap widget */
 .widget {
@@ -253,7 +278,7 @@ body {
 }
 
 .dropdown-menu li a:hover {
-    background-color: #25a48a;
+    background-color: #20B2AA;
     /* Warna hover */
 }
 
@@ -340,20 +365,6 @@ tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-.action-btn {
-    background-color: #25a48a    ;
-    border: none;
-    color: white;
-    padding: 3px 8px; /* Kurangi ukuran tombol */
-    cursor: pointer;
-    border-radius: 3px; /* Kecilkan radius tombol */
-    font-size: 12px; /* Kecilkan ukuran teks tombol */
-}
-
-.action-btn:hover {
-    background-color: #5e95a5;
-}
-
 /* search bar */
 .search-bar {
     display: flex;
@@ -405,7 +416,7 @@ tbody tr:hover {
     padding: 6px 12px; /* Memperkecil ukuran tombol */
     background-color: #1b3446;
     color: white;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Merriweather', 'Merriweather Sans', sans-serif;
     font-size: 12px;
     font-weight: 600;
     border: 1px solid #84B8C6;
@@ -416,8 +427,8 @@ tbody tr:hover {
 
 .btn-primary:hover {
     background-color: white;
-    color: #25a48a;
-    border: 1px solid #25a48a;
+    color: #20B2AA;
+    border: 1px solid #20B2AA;
 }
 
 .btn-primary:active {
@@ -425,6 +436,89 @@ tbody tr:hover {
     color: white;
 }
 
+/* General Card Style */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+}
+
+.card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card .header .name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card .header .date {
+    font-size: 12px;
+    color: #b0bec5;
+}
+
+.card .content {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card .rating {
+    margin-top: 10px;
+}
+
+.card .rating span {
+    font-size: 16px;
+    color: #f39c12;
+}
+
+.card .actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Menambahkan jarak antar tombol */
+}
+
+.header {
+    margin-bottom: 20px; /* Jarak antara header dan isi form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Untuk menyamakan posisi label dan input */
+}
+
+.form-group label {
+    width: 120px; /* Lebar tetap untuk menyamakan label */
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input {
+    flex-grow: 1; /* Mengisi ruang sisa */
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    border-color: #84B8C6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(132, 184, 198, 0.5);
+}
+
+form .btn-primary {
+    margin-top: 15px;
+}
 
 /* Responsif */
 @media (max-width: 768px) {
@@ -460,5 +554,19 @@ tbody tr:hover {
 @media (max-width: 480px) {
     .dashboard-widgets {
         grid-template-columns: 1fr;
+    }
+    .form-group {
+        flex-direction: column; /* Label dan input berada dalam baris terpisah */
+        align-items: flex-start; /* Label tetap rata kiri */
+    }
+
+    .form-group label {
+        width: 100%; /* Label memenuhi lebar */
+        margin-bottom: 5px; /* Jarak antara label dan input */
+    }
+
+    .form-group input {
+        width: 100%; /* Input memenuhi lebar */
+        min-width: unset; /* Hapus batas minimal */
     }
 }

@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities Management</title>
+    <title>Fasilitas | Kostconnect</title>
+    <link rel="shortcut icon" href="/img/logokos.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/admin/style.css">
 </head>
 <body>
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebar-header">
-                <i class="fas fa-futbol"></i>
+                <!-- Ganti dengan gambar -->
+                <img src="/img/logokos.png" alt="Kosconnect Logo" style="width: 40px; height: 40px; margin-right: 10px;">
                 <h2>Kosconnect</h2>
             </div>
             <ul>
@@ -34,7 +36,7 @@
         <!-- Main Content -->
         <div class="main-content">
             <div class="dashboard-header">
-                <h1>Facilities</h1>
+                <h1>Fasilitas</h1>
                 <div class="header-icons">
                     <a href="#"><i class="fas fa-bell"></i></a>
                     <a href="#"><i class="fas fa-cog"></i></a>
@@ -56,17 +58,15 @@
 
             <!-- Facilities Management Table -->
             <div class="facility-management">
-                <h2>Facilities Management</h2>
+                <h2>Manajemen Fasilitas</h2>
                 <div style="text-align: right; margin-bottom: 10px;">
-                    <button class="btn btn-primary">Tambah Kategori</button>
+                    <button class="btn btn-primary" onclick="window.location.href='/admin/tambah_fasilitas.html'">Tambah Fasilitas</button>
                 </div>                
                 <table>
                     <thead>
                         <tr>
-                            <th>No</th>
+                            <th>ID</th>
                             <th>Nama Fasilitas</th>
-                            <th>Deskripsi</th>
-                            <th>Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -74,8 +74,6 @@
                         <tr>
                             <td>1</td>
                             <td>WiFi Gratis</td>
-                            <td>Internet cepat di seluruh area kos</td>
-                            <td>Aktif</td>
                             <td>
                                 <button class="btn btn-primary"><i class="fas fa-edit"></i> Edit</button>
                                 <button class="btn btn-primary"><i class="fas fa-trash"></i> Hapus</button>
@@ -84,8 +82,6 @@
                         <tr>
                             <td>2</td>
                             <td>Parkir Luas</td>
-                            <td>Area parkir untuk mobil dan motor</td>
-                            <td>Nonaktif</td>
                             <td>
                                 <button class="btn btn-primary"><i class="fas fa-edit"></i> Edit</button>
                                 <button class="btn btn-primary"><i class="fas fa-trash"></i> Hapus</button>
